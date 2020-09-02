@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        ip-address: localhost
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        prefer-ip-address: true
+      host: localhost
+      port: 8500
+  rabbitmq:
+    host: 10.0.0.197
+    port: 5672
+    username: guest
+    password: guest
+info: 
+  name: ww11aa
