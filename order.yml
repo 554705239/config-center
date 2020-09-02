@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        ip-address: localhost
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        prefer-ip-address: true
+      host: localhost
+      port: 8500
+info: 
+  name: wm1
